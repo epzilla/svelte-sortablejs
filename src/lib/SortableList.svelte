@@ -1,8 +1,11 @@
 <script lang="ts">
 	import { onDestroy, onMount } from 'svelte';
-	import Sortable, { MultiDrag, Swap, type GroupOptions, type Options } from 'sortablejs';
+	import Sortable from 'sortablejs';
 	import type { SortableEvent } from 'sortablejs';
 	import type { MoveEvent } from 'sortablejs';
+	import type { Options, GroupOptions } from 'sortablejs';
+
+	const { MultiDrag, Swap } = Sortable;
 
 	// Svelte Library Variables
 	let list: HTMLElement;
